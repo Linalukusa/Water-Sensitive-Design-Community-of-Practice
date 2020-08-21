@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+        <div class="row">
+            <div >
+                <div >
+                    <article class="blog_item">
+                        <div class="blog_item_img">
+                            <h2>INTERNATIONAL MANUALS
+                            </h2>                             
+                        </div>
+                        <br>
+                        <p>
+                            The following manuals are considered useful for furthering your knowledge about WSUD, specifically SuDS. Should you find a link out of order please notify us.
+                        </p>
+                        <br>
+                        <h3> Manuals / Guidelines                        </h3>
+                        <div class="">
+                            <ol class="ordered-list">
+                               <a href="http://www.wrc.org.za/Pages/DisplayItem.aspx?ItemID=10843&FromURL=%2fPages%2fKH_AdvancedSearch.aspx%3fdt%3d%26ms%3d%26d%3dWater+Sensitive+Urban+Design+(WSUD)+for+South+Africa%3a+Framework+and+guidelines%26start%3d1">  <li><span>The SuDS Manual -SuDS</span></li> </a>
+                               <a href="{% url 'rainbow' %}"><li><span> Georgia Stormwater Manual -SuDS</span></li> </a>
+                               <a href="{% url 'wits' %}"><li><span>Project Report and Case Studies </span></li></a>
+                               <a href="{% url 'wits' %}"><li><span>Melbourne WSUD Guidelines – SuDS/WSUD</span></li></a>
+                               <a href="{% url 'wits' %}"><li><span>SWITCH Guidelines – SuDS/WSUD </span></li></a>
+
+                            </ol>
+                        </div>
+                       
+                        
+                
+                    </article>
+
+                </div>
+            </div>
+                    <div class="col-lg-4">
+         
+        </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Pietermaritzburg Anglican Cathedral
+                   </h2>
+                   <div class="blog_item_img">
+                              <img class="card-img rounded-0" src="{%static 'img/blog/paving.jpg' %}" alt="">
+                              
+                     </div>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives: Permeable paving</h4>
+              <p>
+              In Mid-2009 the Diocese of Natal approached Partners in Development (Pty) Ltd in the pursuit of a sustainable upgrade of the Cathedral Centre parking-lot. 
+              The Cathedral Centre, located at 169 Langalibalele Street in Pietermaritzburg, has a parking area consisting of asphalt surfacing, grassed and gravel areas, and concrete grass block pavers. A comprehensive status quo of the area by PID revealed that no formal drainage system exists within the Cathedral Centre bounds, which has resulted in sections becoming flooded and mud-covered during rainfall events. The current stormwater network channels roof run-off to a municipal stormwater catchpit adjacent to the parking lot entrance. In their preliminary report, PID state that this catchpit has a 375mm diameter stormwater pipe that transports flow from the Centre, 
+              as well as surface runoff from Langalibalele Street
+              </p>
+          </div>
+          
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+               <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                        <p>Case Studies Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" class="d-flex">
+                         <h4>Kwa-Zulu Natal </h4>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}"class="d-flex">
+                         <p>Western Cape </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+                </aside>
+                
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+{%endblock%}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+ <!-- about us part end-->
+
+ <section>
+    {% if pages %}
+    {% for page in pages %}
+    <div class="container">
+    <div class="whole-wrap">
+    <div class="container box_1170">
+    <div class="section-top-border">
+       
+            <h2 class="mb-30"> {{ page.title }} </h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="{%static 'img/blog/wscc.jpg' %}" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 mt-sm-20">
+                    <p>
+                        {{ page.paragraph_1 }}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+    <div class="container box_1170">
+        <p >
+            {{ page.paragraph_2 }}
+
+                <p>                         {{ page.paragraph_3 }}
+                </p>
+                    <div class="">
+                        <ol class="ordered-list">
+                            <li><span>Scope potential and current WSD project opportunities in South Africa</span></li>
+                            <li><span>Establish project priorities and their potential to be implemented as WSD research projects.</span></li>
+                            <li><span>Develop and maintain ‘Learning Alliances’</span></li>
+                            <li> <span>Scope institutional challenges associated with implementing WSD into the planning and implementing environment </span> </li>
+                            <li> <span>Strengthen and broaden the WSD researcher base for South Africa </span> </li>
+                            <li> <span>Develop a WSD project database and website </span> </li>
+                            <li> <span> Facilitate and coordinate partnerships with relevant sector players to convert potential WSD projects to demonstration projects for consideration by the WRC</span> </li>
+                            <li> <span>Consolidate WSD project information from additional research projects. abase and website </span> </li>
+                        
+                        </ol>
+                    </div>
+        <p>                          {{ page.paragraph_4 }} </p>
+    </div>
+    <div class="whole-wrap">
+    <div class="container box_1170">
+    <div class="section-top-border">
+            <h2 class="mb-30">Key Stakeholders</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="{%static 'img/blog/stakeholders.jpg' %}" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 mt-sm-20">
+                    <p>                         {{ page.paragraph_5 }}</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</section>
+<section>
+    <div class="container box_1170">
+        <p >The specific objectives of the WSD CoP include:</P>
+                    <div class="">
+                        <ol class="ordered-list">
+                            <li><span>WRC Project K5/1826. Alternative technology for stormwater systems: The South African guidelines for Sustainable Drainage Systems (SuDS). </span></li>
+                            <li><span>WRC Project K5/2071. Water Sensitive Urban Design (WSUD) for South Africa: Framework and guidelines.</span></li>
+                            <li><span>WRC Project K5/2412. Challenges and opportunities for implementing Water Sensitive Design in South Africa</span></li>
+                            <li> <span>WRC Project K5/2413. Development and management of a Water Sensitive Design Community of Practice programme for South Africa </span> </li>
+                            
+                        
+                        </ol>
+                    </div>
+                    <p>                         {{ page.paragraph_6 }}
+                    </p>
+    </div>
+    {% endfor %}
+            {% endif %}
+</section>
+
+</br>
+
+
+            
+
+{% endblock %}

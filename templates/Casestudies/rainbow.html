@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Rainbow Junction
+                   </h2>
+                   
+                <div class="section-top-border">
+              <p>
+              The proposed Rainbow Junction site stretches from Wonderboom Poort to the R513 in an elongated shape. 
+              The existing site is zoned as agricultural land, with the Apies River along the eastern embankment of the site. 
+              The development concept for the site has been drafted by V & L Landscape Architects, who have chosen to market the site as a „sustainable development‟ in all aspects. SUDS technologies have been designed as a means of stormwater management throughout the site. The concept indicates that the proposed uses of the land will be for commercial, retail and residential purposes.
+              Public and controlled open space has also been reserved as well as a relatively large riparian zone along the Apies River edge.
+              </p>
+              <h6>WSUD Initiatives: </h6> <p> Treatment trains; BMP’s </p>
+
+              <h6>Companies Involved: </h6> <p>V & L Landscape Architects </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+                 <aside class="single_sidebar_widget post_category_widget">
+                   <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                           <p>Case Studies Overview</p>
+                         </a>
+   
+                     </li>
+                      <li>
+                         <a href="{% url 'menlyn' %}" class="d-flex">
+                            <h4>Gauteng </h4>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'cotswold' %}" class="d-flex">
+                            <p>Kwa-Zulu Natal </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'capetown' %}"class="d-flex">
+                            <p>Western Cape </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'reports' %}" lass="d-flex">
+                            <p>Case Studies Reports</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+                </aside>
+                </aside>
+                
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ {%endblock%}

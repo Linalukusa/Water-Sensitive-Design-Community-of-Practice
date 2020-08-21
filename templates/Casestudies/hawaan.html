@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Hawaan Forest Estate
+                   </h2>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives:  Treatment trains  </h4>
+              <p>
+              Hawaan Forest Estate is an upmarket residential development, privately owned by Hawaan Investments (Pty) Ltd. The estate is situated to the north of the Stratton-on-Sea suburb and to west of the adjoining northern freeway (N2). The Hawaan Forest lies to the east of the estate and separates it from the eThekwini (Durban) coastline. It was a requirement by eThekwini‟s Catchment Management Department that natural drainage routes be developed through the forest, given the history of relatively large floods in the immediate area (Knox, 2003). The area slopes between 2% in western sections to approximately 15% in northern parts, with a mean slope of 8% over the estate. Hawaan Estate, which is founded on dune sand of the coastal sands formation, had previously been abandoned sugarcane lands. 
+              The coastal sands formation provides very permeable conditions, adequate for the use of most SUDS technologies and the application of WSUD principles.
+              </p>
+              <h4> Companies Involved: </h4> <p> Stemele Bosch Africa Consulting Engineers and Project Managers; Ndebele Kirby Planners </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+               <aside class="single_sidebar_widget post_category_widget">
+                  <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                           <p>Case Studies Overview</p>
+                         </a>
+   
+                     </li>
+                      <li>
+                         <a href="{% url 'menlyn' %}" class="d-flex">
+                            <p>Gauteng </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'cotswold' %}" class="d-flex">
+                            <h4>Kwa-Zulu Natal </h4>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'capetown' %}"class="d-flex">
+                            <p>Western Cape </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'reports' %}" lass="d-flex">
+                            <p>Case Studies Reports</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+               </aside>
+               </aside>
+               </aside>
+                <aside class="single_sidebar_widget popular_post_widget">
+                          <h2> Links to relevant articles </h2>
+                      <div class="">
+                          <ol class="ordered-list">
+                              <a href ="http://www.switchurbanwater.eu/pubs.php"> <li><span>SWITCH Resources (SWITCH was “a five year experiment focused on some of the key sustainability challenges in urban water management” the outputs from this project include a range of reports, papers, theses and software)</span></li></a>
+                              <br><a href ="https://waterbydesign.com.au/"><li><span>Water By Design- A web page full of WSUD resources</span></li> </a>
+                              <br><a href="https://en.wikipedia.org/wiki/Water-sensitive_urban_design"> <li><span>WSUD – WiKi</span></li></a>
+                              <br><a href="https://education.ontariotechu.ca/errors/404.php"> <li><span>Learn about the water cycle (basic)</span></li></a>
+                          
+                          </ol>
+                      </div>
+                          
+                      </aside>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+{%endblock%}

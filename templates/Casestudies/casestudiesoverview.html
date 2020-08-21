@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="blog_left_sidebar">
+                    <article class="blog_item">
+                        <div class="blog_item_img">
+                            <h2>CASE STUDIES 
+                            </h2>                             
+                        </div>
+                        <br>
+                        <p>
+                            The following sites have to a greater or lesser extent employed some or other WSUD strategy. The sites are grouped according to region/province. It is encouraging to see the number of sites increasing! If you would like to register a site / WSUD initiative please complete the form at the bottom.
+                        </p>
+                        <h3> Gauteng</h3>
+                        <div class="">
+                            <ul class="unordered-list">
+                               <a href="{% url 'menlyn' %}" target="_blank">  <li><span>Menlyn Maine</span></li> </a>
+                               <a href="{% url 'rainbow' %}" target="_blank"><li><span> Rainbow Junction</span></li> </a>
+                               <a href="{% url 'wits' %}" target="_blank"><li><span>University of Witswaterand Parking Lot </span></li></a>
+                            
+                            </ul>
+                        </div>
+                        <h3> Kwa-Zulu Natal</h3>
+                        <div class="">
+                            <ul class="unordered-list">
+                                <a href="{% url 'cotswold' %}" target="_blank"> <li><span>Cotswold Downs Golf Estate</span></li></a>
+                                <a href="{% url 'hawaan' %}" target="_blank"> <li><span> Hawaan Forest Estate</span></li></a>
+                                 <a href="{% url 'kzn' %}" target="_blank"> <li><span> KZN Green Roof </span></li></a>
+                                 <a href="{% url 'pietermaritzburg' %}" target="_blank"> <li><span> Pietermartizburg Anglican Cathedral</span></li></a>
+
+                            </ul>
+                        </div>
+                        <h3> Western Cape</h3>
+                        <div class="">
+                            <ul class="unordered-list">
+                                <a href="{% url 'capetown' %}" target="_blank"><li><span>  Cape Town Grand Parade</span></li></a>
+                                <a href="{% url 'centurycity' %}" target="_blank"><li><span> Century City Wetland</span></li></a>
+                                <a href="{% url 'roofgarden' %}" target="_blank"><li><span>  DEADP Roof Garden </span></li></a>
+                                <a href="{% url 'hotelverde' %}" target="_blank"><li><span>  Hotel Verde</span></li></ul></a>
+
+                            </ul>
+                        </div>
+                        <h3> Case Studies Reports</h3>
+                        <div class="">
+                            <ul class="unordered-list">
+                                <a href="{% url 'projectdavid' %}" target="_blank"><li><span> B.Sc (Eng) Thesis by David Ellis (2013) : South African WSUD Case Studies</span></li></a>
+                                <a href="{% url 'projectwilliam' %}" target="_blank"><li><span> B.Sc (Eng) Thesis by William Wu (2012): International WSUD Case Studies</span></li></ul></a>
+
+                            </ul>
+                        </div>
+
+                        
+                
+                    </article>
+
+                </div>
+            </div>
+                    <div class="col-lg-4">
+           <div class="blog_right_sidebar">
+            <aside class="single_sidebar_widget post_category_widget">
+                   
+                <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" target="_blank"  class="d-flex"> 
+                        <h4>Case Studies Overview</h4>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" target="_blank" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" target="_blank" class="d-flex">
+                         <p>Kwa-Zulu Natal </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}" target="_blank"class="d-flex">
+                         <p>Western Cape </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" target="_blank" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+             </aside>
+              
+           </div>
+        </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

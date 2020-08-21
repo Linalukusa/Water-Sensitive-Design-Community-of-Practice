@@ -1,0 +1,366 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+  {% if wsd %}
+		{% for Modellings in wsd %}
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2> {{Modellings.title}}
+                   </h2>
+                   
+                   <p class="excert">
+                    {{Modellings.pagraph_1}}                    </p>
+                    <h2> Stormwater Models</h2>
+          
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            MUSIC                                 
+                         </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                  {{Modellings.paragraph_2}}                                </p>
+                                <div class="">
+                                  <ul class="unordered-list">
+                                      <li><span> Determining the probabPredicting the performance of structural BMPs in protecting water quality.</span></li>
+                                      <li><span>Designing an integrated stormwater management system.</span></li>
+                                      <li> <span> Evaluating the success of potential designs against a range of water quality standards. </span> </li>
+                                      
+                                  
+                                  </ul>
+                              </div>
+                              <p>
+                                <i>MUSIC </i>      {{Modellings.paragraph_3}}                                
+
+                              </p>
+                              <p>
+                                <i>MUSIC </i>      {{Modellings.paragraph_4}}                                
+
+                              </p>
+                              <p><i>MUSIC </i>
+                                {{Modellings.paragraph_5}}                                </p>
+                              
+                              <p>
+                                {{Modellings.paragraph_6}}                                </p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 SLAMM
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                  {{Modellings.paragraph_7}}                                </p>
+
+                                <p>
+                                  <i>SLAMM </i>       {{Modellings.paragraph_8}}                                </p>
+
+                                <p>
+                                  <i>SLAMM </i>       {{Modellings.paragraph_9}}                                </p>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                SUSTAIN                                  </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                  {{Modellings.paragraph_10}}                                </p>
+
+      
+                                <p>
+                                  <i> SUSTAIN</i>   {{Modellings.paragraph_11}}                            </p>
+
+                                <p>
+                                  <i> SUSTAIN</i>    {{Modellings.paragraph_12}}                                </p>
+
+                                
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    SWMM                                  </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <p>
+                                    {{Modellings.paragraph_13}}                                </p>
+      
+                                  <p>
+                                    <i>SWMM</i>         {{Modellings.paragraph_14}}                                </p>
+                                    <p>
+                                    <i>SWMM</i>     {{Modellings.paragraph_15}}                                </p>
+
+                                  <p>
+                                    <i>SWMM</i>
+                                    {{Modellings.paragraph_16}}                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+                      <br>
+                      <h2> Urban Water Cycle Models</h2>
+
+                        <div class="card">
+                          <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            SOURCE URBAN                                
+                         </button>
+                            </h2>
+                          </div>
+                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <p>
+                                {{Modellings.paragraph_17}}                                </p>
+
+                                <div class="">
+                                  <ul class="unordered-list">
+                                      <li><span> River extractions to in-line or off-line reservoirs.
+                                        </span></li>
+                                      <li><span>
+                                        Direct river extractions.
+                                      </span></li>
+                                      <li><span>
+                                        Groundwater extractions.
+                                      </span></li>
+                                      <li><span>
+                                        Alternative sources such as stormwater harvesting and wastewater treatment.
+                                      </span></li>
+                                      <li><span>
+                                        Desalination.
+                                      </span></li>
+                                      <li><span>
+                                        Decentralised sources such as rainwater tanks.
+                                      </span></li>
+                                    
+                                      
+                                  
+                                  </ul>
+                              </div>
+                                <p>
+                                  {{Modellings.paragraph_18}}                                </p>
+
+                              </div>
+                        </div>
+                        
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  UVQ                                
+                         </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                  {{Modellings.paragraph_19}}                                </p>
+
+                                
+                                   <br>
+                                 <p> 
+                                  {{Modellings.paragraph_20}}                                </p>
+
+                              <br>
+                                 <p> 
+                                  {{Modellings.paragraph_21}}                                </p>
+
+                             </div>
+                          </div>
+                        </div>   
+
+
+
+
+                        <div class="card">
+                          <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                URBAN DEVELOPER                               </button>
+                            </h2>
+                          </div>
+                          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                  <i>Urban Developer</i> 
+                                  {{Modellings.paragraph_22}}                                </p>
+
+                                   <br>
+                                  <p>
+                                    <i> Urban Developer</i> 
+                                    {{Modellings.paragraph_23}}                                </p>
+
+                                  </p>
+                                  <div class="">
+                                    <ul class="unordered-list">
+                                        <li><span> Determining the probabPredicting the performance of structural BMPs in protecting water quality.</span></li>
+                                        <li><span>Designing an integrated stormwater management system.</span></li>
+                                        <li> <span> Evaluating the success of potential designs against a range of water quality standards. </span> </li>
+                                        
+                                    
+                                    </ul>
+                              <p>
+                                <i> Urban Developer</i> 
+                                {{Modellings.paragraph_24}}                                </p>
+
+                              </p>
+                                </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                  WaterCress                                 </button>
+                              </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <p>
+                                  <i>WaterCress</i> 
+                                  {{Modellings.paragraph_25}}                                </p>
+
+                                     <br>
+                                     <p>
+                                      <i>WaterCress</i> 
+                                      {{Modellings.paragraph_26}}                                </p>
+
+                                     </p>
+                                     <div class="">
+                                      <ul class="unordered-list">
+                                          <li><span> Determining the probabPredicting the performance of structural BMPs in protecting water quality.</span></li>
+                                          <li><span>Designing an integrated stormwater management system.</span></li>
+                                          <li> <span> Evaluating the success of potential designs against a range of water quality standards. </span> </li>
+                                          
+                                      
+                                      </ul>
+                                  </div>
+                            </div>
+                          </div>  
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="headingNine">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                              WEAP                               
+                           </button>
+                              </h2>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  <p>
+                                    {{Modellings.paragraph_27}}                                </p>
+
+                                     <br>
+                                     <p>
+                                      <i>WEAP</i> 
+                                      {{Modellings.paragraph_28}}                                </p>
+
+                                <br>
+                                <p>
+                                  <i>WEAP</i>
+                                  {{Modellings.paragraph_29}}                                </p>
+
+                                  </div>
+                            </div>
+                          
+                          </div>
+                      </div>
+                  
+                </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+                   
+                <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'wsdoverview' %}" class="d-flex"> 
+                        <p>Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'watersensitivecities' %}" class="d-flex">
+                         <p>Water Sensitive Cities</p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'drainagesystems' %}" class="d-flex">
+                         <p>Sustainable Drainage Systems</p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'wsdsa' %}" class="d-flex">
+                         <p>Water Sensitive Design in SA </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'modelling' %}" lass="d-flex">
+                         <h4>Modelling Tools</h4>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+             </aside>
+             <aside class="single_sidebar_widget popular_post_widget">
+              <h2> Links to relevant articles </h2>
+          <div class="">
+              <ol class="ordered-list">
+                  <a href ="http://www.switchurbanwater.eu/pubs.php"> <li><span>SWITCH Resources (SWITCH was “a five year experiment focused on some of the key sustainability challenges in urban water management” the outputs from this project include a range of reports, papers, theses and software)</span></li></a>
+                  <br><a href ="https://waterbydesign.com.au/"><li><span>Water By Design- A web page full of WSUD resources</span></li> </a>
+                  <br><a href="https://en.wikipedia.org/wiki/Water-sensitive_urban_design"> <li><span>WSUD – WiKi</span></li></a>
+                  <br><a href="https://education.ontariotechu.ca/errors/404.php"> <li><span>Learn about the water cycle (basic)</span></li></a>
+              
+              </ol>
+          </div>
+              
+          </aside>
+ </div>
+</div>
+</div>
+</div>
+  {% endfor %}
+{% endif %}
+</section>
+
+{%endblock%}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>KZN Green Roof  
+                   </h2>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives: Green Roof  </h4>
+              <p>
+              Innovative research into the effectiveness of green roof technology in South Africa is being tested in eThekwini (Durban). KwaZulu-Natal’s DEADP in conjunction with the Municipal Climate Protection Programme (MCPP) have initiated the Green Roof Pilot Project, which aims to appropriate the following:
+              </p>
+              <p>
+              Two adjoining flat topped roofs at the eThekwini (Durban) Engineering Services building are being experimented on. Each has been fitted with 12 different varieties of vegetation. Each set consists of small, tailor-made trays, which include various types, sizes and thicknesses of grasses, plants and other vegetation.
+              <div >
+                          <ul class="unordered-list">
+                              <li> </span> A reduction in building temperatures and stormwater runoff;   </span></li>
+                              <li> </span> The mitigation and adaption to climate change; and </span></li>
+                              <li> </span> Promotion of inner city biodiversity.   </span></li>
+                          
+                          </ul>
+                      </div>
+              </p>
+              <p>
+               Two adjoining flat topped roofs at the eThekwini (Durban) Engineering Services building are being experimented on. Each has been fitted with 12 different varieties of vegetation. Each set consists of small, tailor-made trays, which include various types, sizes and thicknesses of grasses, plants and other vegetation.
+              </p>
+              <h4> Companies Involved: </h4> <p> KwaZulu-Natal’s DEADP & Municipal Climate Protection Programme </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+               <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                        <p>Case Studies Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" class="d-flex">
+                         <h4>Kwa-Zulu Natal </h4>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}"class="d-flex">
+                         <p>Western Cape </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+                </aside>
+               
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+{%endblock%}

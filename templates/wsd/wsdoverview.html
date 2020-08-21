@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+   {% if wsd %}
+		{% for overview in wsd %}
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>       {{ overview.title}}
+                   </h2>
+                   
+                   <p class="excert">
+                      {{ overview.paragraph_1}}
+                      </p>
+                   <p>
+                     {{ overview.paragraph_2}}
+
+                   </p>
+                  
+                   <p>
+                     {{ overview.paragraph_3}}
+
+                  <p>
+                   <p>
+                     {{ overview.paragraph_4}}
+
+
+                   </p>
+                   <p>
+                   WSD <i>       {{ overview.paragraph_5}}                  </i>
+                   </p>
+                   <p>
+                     {{ overview.paragraph_6}}                    </p>
+                       <div class="blog_item_img">
+                              <img class="card-img rounded-0" src="{{ overview.photo_1.url}}" alt="">
+                               <blockquote>{{ overview.paragraph_7}} </blockquote>
+                               
+                          </div>
+
+
+                </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+                <aside class="single_sidebar_widget post_category_widget">
+                   
+                   <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'wsdoverview' %}" class="d-flex"> 
+                           <h4>Overview</h4>
+                         </a>
+
+                     </li>
+                      <li>
+                         <a href="{% url 'watersensitivecities' %}" class="d-flex">
+                            <p>Water Sensitive Cities</p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'drainagesystems' %}" class="d-flex">
+                            <p>Sustainable Drainage Systems</p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'wsdsa' %}" class="d-flex">
+                            <p>Water Sensitive Design in SA </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'modelling' %}" lass="d-flex">
+                            <p>Modelling Tools</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+                </aside>
+                <aside class="single_sidebar_widget popular_post_widget">
+                          <h2> Links to relevant articles </h2>
+                      <div class="">
+                          <ol class="ordered-list">
+                              <a href ="http://www.switchurbanwater.eu/pubs.php"> <li><span>SWITCH Resources (SWITCH was “a five year experiment focused on some of the key sustainability challenges in urban water management” the outputs from this project include a range of reports, papers, theses and software)</span></li></a>
+                              <br><a href ="https://waterbydesign.com.au/"><li><span>Water By Design- A web page full of WSUD resources</span></li> </a>
+                              <br><a href="https://en.wikipedia.org/wiki/Water-sensitive_urban_design"> <li><span>WSUD – WiKi</span></li></a>
+                              <br><a href="https://education.ontariotechu.ca/errors/404.php"> <li><span>Learn about the water cycle (basic)</span></li></a>
+                          
+                          </ol>
+                      </div>
+                          
+                      </aside>
+             </div>
+          </div>
+       </div>
+    </div>
+    {% endfor %}
+ {% endif %}
+ </section>
+
+ 
+
+{% endblock %}

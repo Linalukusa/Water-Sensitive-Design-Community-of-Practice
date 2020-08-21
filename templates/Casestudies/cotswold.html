@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Cotswold Downs Golf Estate 
+                   </h2>
+                   
+                <div class="section-top-border">
+              <p>
+              The Cotswold Downs Golf Estate is situated on the western outskirts of eThekwini (Durban). The Estate includes a championship golf course. Public open spaces, bush and thicket, and several wetlands are abundant throughout the development. The development adjoins the Kranzkloof Nature Reserve to the East. Due to the undulating slopes on the development, the stormwater consultants, were reluctant to design conventional stormwater management infrastructure. With an expected increase in runoff flows and volumes from the proposed development, conventional systems would have destructive effects on low lying parts of the development and especially the nature reserve downstream. In response to these concerns, WSUD principles were used to mitigate stormwater flood peaks and improve the quality of water that would ultimately be carried by the Nkutu River into the Kranzkloof Nature reserve. </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+               <aside class="single_sidebar_widget post_category_widget">
+                  <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                           <p>Case Studies Overview</p>
+                         </a>
+   
+                     </li>
+                      <li>
+                         <a href="{% url 'menlyn' %}" class="d-flex">
+                            <p>Gauteng </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'cotswold' %}" class="d-flex">
+                            <h4>Kwa-Zulu Natal </h4>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'capetown' %}"class="d-flex">
+                            <p>Western Cape </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'reports' %}" lass="d-flex">
+                            <p>Case Studies Reports</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+               </aside>
+               </aside>
+               
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ {%endblock%}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+        <section >
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 posts-list">
+                     <div class="single-post">
+                        
+                        <div class="blog_details">
+                           <h2>Case Studies Reports
+                           </h2>
+                           <h5> Identification and Review of Selected WSUD Case Studies in South Africa – David Ellis </h5>
+                        <div class="section-top-border">
+                           <h5> Project type:  <p>B.Sc (Eng) Research Project </p> </h5>
+                           <h5> Author: <p> David Ellis       </p> </h5>
+                           <h5>Supervisor/s:  <p>  Prof N.P. Armitage (Supervisor), Mr L. Fisher-Jeffes (Co-Supervisor)</p></h5>
+                           <h5> Date of Completion: <p> 2013</p></h5>
+                           <center> ABSTRACT</center>
+                      <p>
+                        South Africa is termed a water stressed country with moderate to low annual precipitation. Additionally, it is currently experiencing noticeable water scarcities, showing certain signs of exceeding its current well-developed storage capacities in the very near future. This is despite the continued investment in large scale storage facilities and inter-catchment schemes that are also becoming harder to implement due to economic constraints and limited remaining recoverable surface supplies. These effects are most noticeable in the rapidly expanding urban centres such as Cape Town and Johannesburg where growth in demand is greatest. The current potable water supply situation in urban areas is only aggravating the national state of affairs as traditional linear management approaches are proving to be inefficient and wasteful practices. Accordingly, most scholars, as well as the Water Research Commission (WRC) believe that a fresh approach is required regarding the management of water, particularly in urban areas, with an emphasis on ‘sustainability’ and ‘sustainable’ ideals being the driving force behind such change. Such a trend has been seen recently with the development of guidelines for sustainable drainage systems by the WRC however, such change needs to be carried through to the other streams of the urban water cycle; including water conservation and wastewater minimisation practices.
+                      </p>
+                      <p>
+                        The term Water Sensitive Urban Design (WSUD) was originally coined in Australia and provided the sustainable concept that incorporated all streams of the urban water cycle. Accordingly, the concept was adopted by the WRC to be adapted into a South African context. Simultaneously, the understanding of such system had also gained traction independently of the WRC efforts and resulted in the emergence of some initial developments in South Africa incorporation some of the WSUD principles. These have now been in operation for several years and accordingly represent good amount of acquired institutional knowledge. Accessing such knowledge would prove valuable in aiding the amendment of the WSUD concept to a South African context. As a result, case studies of these developments are desired so that lessons can be learnt.
+                      </p>
+                      <p>
+                        The purpose of this research project is to present three of such case studies; including Hotel Verde, Millennia Park and Pick n’ Pay Philippi distribution centre and assess the effectiveness of the early implemented WSUD practices. The case study reviews are designed to highlight operational issues and design inefficiencies. The findings of the case studies include, inter alia, ineffective demand and management and allocation strategies for alternative supplies, a lack of institutional capacity among industry professional to effectively implement such practices and inefficient SuD practices.
+                      </p>
+                  </div>
+                   </div>
+                     </div>
+                    
+              
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="blog_right_sidebar">
+                        
+                        <aside class="single_sidebar_widget post_category_widget">
+                           <a href=""> <h4 class="widget_title">Case Studies Overview</h4> </a>
+                           <ul class="list cat-list">
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Gauteng</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Kwa-Zulu Natal</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Western Cape</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Case Studies Reports</p>
+                                 </a>
+                              </li>
+                              
+                              
+                           </ul>
+                        </aside>
+                        </aside>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+    
+
+       </div>
+    </div>
+ </section>
+{%endblock%}

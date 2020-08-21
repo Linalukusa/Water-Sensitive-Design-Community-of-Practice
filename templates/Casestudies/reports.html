@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+        <section >
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 posts-list">
+                     <div class="single-post">
+                        
+                        <div class="blog_details">
+                           <h2>Case Studies Reports
+                           </h2>
+                           <h5> Identification and Review of Selected WSUD Case Studies in South Africa – David Ellis </h5>
+                        <div class="section-top-border">
+                      <p>
+                      </p>
+                  </div>
+                   </div>
+                     </div>
+                    
+              
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="blog_right_sidebar">
+                        
+                        <aside class="single_sidebar_widget post_category_widget">
+                           <a href=""> <h4 class="widget_title">Case Studies Overview</h4> </a>
+                           <ul class="list cat-list">
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Gauteng</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Kwa-Zulu Natal</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Western Cape</p>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="{% url 'casestudiesoverview' %}" class="d-flex">
+                                    <p>Case Studies Reports</p>
+                                 </a>
+                              </li>
+                              
+                              
+                           </ul>
+                        </aside>
+                        </aside>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+    
+
+       </div>
+    </div>
+ </section>
+{%endblock%}

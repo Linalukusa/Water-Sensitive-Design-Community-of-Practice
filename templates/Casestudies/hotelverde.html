@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Hotel Verde
+
+                   </h2>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives: Wetland, Rainwater harvesting, greywater reuse </h4>
+              
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+               <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                        <p>Case Studies Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" class="d-flex">
+                         <p>Kwa-Zulu Natal </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}"class="d-flex">
+                         <h4>Western Cape </h4>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+                </aside>
+                
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+{%endblock%}

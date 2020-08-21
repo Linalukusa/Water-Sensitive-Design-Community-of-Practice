@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>DEADP Roof Garden
+                   </h2>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives: Green Roof </h4>
+              <p>
+              On the 5th of December 2006, the roof garden on Property Building. The Western Cape Department of Environmental Affairs and Development Planning (DEADP) roof garden is an example of the integration between art and science. DEADP staff believe the implementation of the roof garden addresses key global issues, including; sustainable development, the effective management of the environment, combating “Climate Change” and the efficient usage of natural resources. The purpose of the roof garden is to reduce environmental impacts through the following two main stormwater management processes;​​​​
+              </p>
+              <div >
+                          <ul class="unordered-list">
+                              <li> </span> Effective stormwater attenuation and reduction; and   </span></li>
+                              <li> </span> The regulation of temperatures in the Property Centre building. </span></li>
+                          
+                          </ul>
+                      </div>
+                  <h4> Companies Involved:</h4> <p> Department of Environmental Affairs and Development Planning; Eco Logic</p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+               <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                        <p>Case Studies Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" class="d-flex">
+                         <p>Kwa-Zulu Natal </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}"class="d-flex">
+                         <h4>Western Cape </h4>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+                </aside>
+                
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+{%endblock%}

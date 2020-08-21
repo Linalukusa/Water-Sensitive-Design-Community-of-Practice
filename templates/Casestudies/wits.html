@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>University of Witswaterand Parking Lot
+                   </h2>
+                   
+                <div class="section-top-border">
+              <p>
+              In 2007, two northern multi-use sports fields at the University of Witwatersrand (WITS) were converted into parking areas. 
+              The fields were underutilised during consecutive summer sports seasons, therefore it was decided that the most appropriate and effective 
+              use of this area would be for car parking areas for WITS students. These parking areas are situated to the north of the main campus, 
+              south of Empire Road and west of the M1 north-bound. The pre-existing sports fields are displayed in the aerial photographs in Figure 6.1. 
+              The consultants for the project were ARUP (Pty) Ltd, and the manufacturers of the concrete block paving (CBP) product were Concor Technicrete. Mr. Taco Voogt of Concor Technicrete was the project manager, who had previous experiences with the use of the CBP product for relatively large areas. Concor Technicrete is the main competitor of the Western Cape based Inca Concrete Products, and manufacture the most number of concrete permeable paving varieties in South Africa .
+              </p>
+              <h6>WSUD Initiatives: </h6> <p> Permeable paving </p>
+
+              <h6>Companies Involved: </h6> <p>ARUP (Pty) Ltd; Concor Technicrete </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+                 <aside class="single_sidebar_widget post_category_widget">
+                  <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                           <p>Case Studies Overview</p>
+                         </a>
+   
+                     </li>
+                      <li>
+                         <a href="{% url 'menlyn' %}" class="d-flex">
+                            <h4>Gauteng </h4>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'cotswold' %}" class="d-flex">
+                            <p>Kwa-Zulu Natal </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'capetown' %}"class="d-flex">
+                            <p>Western Cape </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'reports' %}" lass="d-flex">
+                            <p>Case Studies Reports</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+                </aside>
+                </aside>
+                
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+
+{%endblock%}

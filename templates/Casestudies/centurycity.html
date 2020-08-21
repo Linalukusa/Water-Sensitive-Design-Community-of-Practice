@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Century City Wetland
+ 
+                   </h2>
+                   
+                <div class="section-top-border">
+                <h4> WSUD Initiatives: Constructed wetland; detention pond; “treatment trains” </h4>
+              <p>
+              First conceptualised in 1995, the last decade has seen Century City established as an upmarket development with the largest shopping centre in the Southern Hemisphere and Cape Town‟s only theme park. Current land use zoning includes commercial and residential uses, supported by large corridors of office park buildings. The slogan, “Live, Work, Play” coined by the Century City Property Owners‟ Association (CCPOA) markets Century City as a self sufficient. </p>
+               <div class="blog_item_img">
+                              <img class="card-img rounded-0" src="{%static 'img/blog/centurycity.jpg' %}" alt="">
+                              
+                     </div>
+              
+              <p> This system collects the stormwater runoff from the Century City and neighbouring Summer Greens developments, and channels it into the adjoining Tygerhof Detention Pond. The Wingfield outfall, located at the north-eastern end of Century City‟s bounds, is the stormwater outfall for the development. </p>
+                  <h4> Companies Involved:</h4> <p> Monex Development Company; GIBB Consulting Engineers; Dr. Bill Harding</p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+              <aside class="single_sidebar_widget post_category_widget">
+               <ul class="list cat-list">
+                  <li>
+                     <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                        <p>Case Studies Overview</p>
+                      </a>
+
+                  </li>
+                   <li>
+                      <a href="{% url 'menlyn' %}" class="d-flex">
+                         <p>Gauteng </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'cotswold' %}" class="d-flex">
+                         <p>Kwa-Zulu Natal </p>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'capetown' %}"class="d-flex">
+                         <h4>Western Cape </h4>
+                      </a>
+                   </li>
+                   <li>
+                      <a href="{% url 'reports' %}" lass="d-flex">
+                         <p>Case Studies Reports</p>
+                      </a>
+                   </li>
+                   
+                   
+                </ul>
+                </aside>
+                <aside class="single_sidebar_widget popular_post_widget">
+                          <h2> Links to relevant articles </h2>
+                      <div class="">
+                          <ol class="ordered-list">
+                              <a href ="http://www.switchurbanwater.eu/pubs.php"> <li><span>SWITCH Resources (SWITCH was “a five year experiment focused on some of the key sustainability challenges in urban water management” the outputs from this project include a range of reports, papers, theses and software)</span></li></a>
+                              <br><a href ="https://waterbydesign.com.au/"><li><span>Water By Design- A web page full of WSUD resources</span></li> </a>
+                              <br><a href="https://en.wikipedia.org/wiki/Water-sensitive_urban_design"> <li><span>WSUD – WiKi</span></li></a>
+                              <br><a href="https://education.ontariotechu.ca/errors/404.php"> <li><span>Learn about the water cycle (basic)</span></li></a>
+                          
+                          </ol>
+                      </div>
+                          
+                      </aside>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ {%endblock%}

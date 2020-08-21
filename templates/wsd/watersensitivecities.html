@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<section >
+   {% if wsd %}
+      {% for cities in wsd %}
+      <div class="container">
+
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>
+                      {{cities.title }} 
+                   </h2>
+                   
+                   <p class="excert">
+                     {{ cities.paragraph_1 }} 
+                  </p>
+                   <p>
+                     {{ cities.paragraph_2}} 
+                      </p>
+                   <div class="quote-wrapper">
+                      <div class="quotes">
+                      <div >
+                      <p >
+                        {{ cities.paragraph_3}} 
+                        <div class="">
+                          <ol class="ordered-list">
+                              <li><span>Cities as Water Supply Catchments: access to a diversity of water sources underpinned by a diversity of centralised and decentralised infrastructure; </span></li>
+                              <li><span> Cities Providing Ecosystem Services: provision of ecosystem services for the built and natural environment; and </span></li>
+                              <li><span>Cities Comprising Water Sensitive Communities: socio-political capital for sustainability and water sensitive decision making and behaviours</span></li>
+                          
+                          </ol>
+                      </div>
+                      </p>
+                  </div>
+                        
+                      </div>
+                   </div>
+                   <p>
+                     {{ cities.paragraph_4}} 
+                  </p>
+                   <div class="blog_item_img">
+                              <img class="card-img rounded-0" src="{{ cities.photo_1.url}}" alt="">
+                              
+                               
+                     </div>
+
+                   <p>
+                     {{ cities.paragraph_5}} 
+                   </p>
+                   <p>
+                     {{ cities.paragraph_6}} 
+                  </p>
+                  <p>
+                     {{ cities.paragraph_}} 
+                  </p>
+                  <div class="blog_item_img">
+                              <img class="card-img rounded-0" src="{{ cities.photo_2.url}}" alt="">
+                      
+                          </div>
+                  
+                </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+               <aside class="single_sidebar_widget post_category_widget">
+                   
+                  <ul class="list cat-list">
+                    <li>
+                       <a href="{% url 'wsdoverview' %}" class="d-flex"> 
+                          <p>Overview</p>
+                        </a>
+
+                    </li>
+                     <li>
+                        <a href="{% url 'watersensitivecities' %}" class="d-flex">
+                           <h4>Water Sensitive Cities</h4>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="{% url 'drainagesystems' %}" class="d-flex">
+                           <p>Sustainable Drainage Systems</p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="{% url 'wsdsa' %}" class="d-flex">
+                           <p>Water Sensitive Design in SA </p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="{% url 'modelling' %}" lass="d-flex">
+                           <p>Modelling Tools</p>
+                        </a>
+                     </li>
+                     
+                     
+                  </ul>
+               </aside>
+                <aside class="single_sidebar_widget popular_post_widget">
+                          <h2> Links to relevant articles </h2>
+                      <div class="">
+                          <ol class="ordered-list">
+                              <a href ="http://www.switchurbanwater.eu/pubs.php"> <li><span>SWITCH Resources (SWITCH was “a five year experiment focused on some of the key sustainability challenges in urban water management” the outputs from this project include a range of reports, papers, theses and software)</span></li></a>
+                              <br><a href ="https://waterbydesign.com.au/"><li><span>Water By Design- A web page full of WSUD resources</span></li> </a>
+                              <br><a href="https://en.wikipedia.org/wiki/Water-sensitive_urban_design"> <li><span>WSUD – WiKi</span></li></a>
+                              <br><a href="https://education.ontariotechu.ca/errors/404.php"> <li><span>Learn about the water cycle (basic)</span></li></a>
+                          
+                          </ol>
+                      </div>
+                          
+                      </aside>
+             </div>
+          </div>
+       </div>
+    </div>
+         {% endfor %}
+    {% endif %}
+ </section>
+
+
+
+
+
+
+
+
+{%endblock%}

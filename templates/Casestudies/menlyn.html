@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section >
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-8 posts-list">
+             <div class="single-post">
+                
+                <div class="blog_details">
+                   <h2>Menlyn Maine
+                   </h2>
+                   
+                <div class="section-top-border">
+              <p>
+              The Menlyn Maine development, 
+              which is currently in the construction phase, has employed similar sustainable drainage techniques as the proposed Rainbow Junction development. 
+              This development is situated in Menlyn Central, which is classified by Tshwane‟s Department of Public Works and Infrastructure Development (DPWID) as a relatively low density residential and commercial area. A set of medium to high density buildings are being constructed for residential, retail and commercial purposes. All buildings are registered by Greenstar, who are members of the Green Building Council of South Africa (GBCSA). It is envisaged that each building will provide owners and tenants with more productive working environments and facilitate sustainable living. The Menlyn Maine precinct has been modelled on the principles of water sensitive urban design (WSUD). Drainage includes a series of SUDS „treatment trains‟, which will be effective in mitigating the effects of stormwater runoff. Harvested stormwater will be reused for domestic purposes in residential environments, and for non-potable purposes in offices and commercial environments.
+              </p>
+          </div>
+           </div>
+             </div>
+            
+      
+          </div>
+          <div class="col-lg-4">
+             <div class="blog_right_sidebar">
+                
+               <aside class="single_sidebar_widget post_category_widget">
+                  <ul class="list cat-list">
+                     <li>
+                        <a href="{% url 'casestudiesoverview' %}" class="d-flex"> 
+                           <p>Case Studies Overview</p>
+                         </a>
+   
+                     </li>
+                      <li>
+                         <a href="{% url 'menlyn' %}" class="d-flex">
+                            <h4>Gauteng </h4>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'cotswold' %}" class="d-flex">
+                            <p>Kwa-Zulu Natal </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'capetown' %}"class="d-flex">
+                            <p>Western Cape </p>
+                         </a>
+                      </li>
+                      <li>
+                         <a href="{% url 'reports' %}" lass="d-flex">
+                            <p>Case Studies Reports</p>
+                         </a>
+                      </li>
+                      
+                      
+                   </ul>
+               </aside>
+               </aside>
+               
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+ {%endblock%}
